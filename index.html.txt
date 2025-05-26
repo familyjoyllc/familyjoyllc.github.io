@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="pageTitle">FAMILY JOY LLC - نظرة عامة على الشركة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F7FFF7; /* Mint Cream */
+            color: #073B4C; /* Very Dark Blue */
+        }
+        .section-title {
+            color: #1A535C; /* Dark Teal */
+        }
+        .highlight-text {
+            color: #FF6B6B; /* Coral Red */
+        }
+        .pill {
+            background-color: #FFE66D; /* Pale Yellow */
+            color: #1A535C; /* Dark Teal for contrast on yellow */
+            font-weight: 600;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.5rem; /* rounded-lg */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(247, 255, 247, 0.9); /* Semi-transparent Mint Cream */
+            backdrop-filter: blur(10px);
+        }
+        .product-category-title {
+            color: #4ECDC4; /* Turquoise */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="sticky-nav shadow-md py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-center flex-grow">
+                <h1 class="text-3xl md:text-4xl font-bold section-title" data-i18n="headerTitle">FAMILY JOY LLC</h1>
+                <p class="text-md md:text-lg text-gray-700 mt-2" data-i18n="headerSubtitle">شركة رائدة في استيراد وتوزيع المواد الغذائية والمنتجات الورقية والبلاستيكية</p>
+            </div>
+            <button id="language-switcher" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">English</button>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6 space-y-12">
+
+        <section id="company-overview" class="scroll-mt-20 text-center">
+            <h2 class="text-2xl md:text-3xl font-semibold section-title mb-4" data-i18n="companyOverviewTitle">نظرة عامة على الشركة</h2>
+            <div class="card p-6 max-w-4xl mx-auto">
+                <p class="text-lg text-gray-700 leading-relaxed" data-i18n="companyOverviewText">
+                    تعتبر FAMILY JOY LLC شركة رائدة في استيراد المواد الغذائية، ملتزمة بتوريد وتوزيع وتوريد منتجات غذائية عالية الجودة من الأسواق العالمية لتلبية الطلبات المتزايدة في منطقة فلسطين. تأسست الشركة عام 1985 ومقرها الرئيسي في الخليل، فلسطين، ونحن متخصصون في استيراد وتوزيع الحبوب والبقوليات والأطعمة المعلبة وغيرها من المواد الغذائية الأساسية، بالإضافة إلى استيراد وتوزيع المنتجات الورقية والبلاستيكية مثل حفاضات الأطفال والمناديل الورقية.
+                </p>
+            </div>
+        </section>
+
+        <section id="vision-mission-values" class="scroll-mt-20">
+            <h2 class="text-2xl md:text-3xl font-semibold section-title text-center mb-8" data-i18n="vmvTitle">رؤيتنا، رسالتنا، وقيمنا الأساسية</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="text-4xl mb-3 highlight-text">🌟</div>
+                    <h3 class="text-xl font-semibold mb-2 section-title" data-i18n="visionTitle">الرؤية</h3>
+                    <p class="text-gray-700" data-i18n="visionText">أن نصبح شركة تجارية موثوقة ومبتكرة في مجال الأغذية تضمن الأمن الغذائي والاستدامة والوصول إلى المنتجات عالية الجودة لكل منزل وعمل نخدمه.</p>
+                </div>
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="text-4xl mb-3 highlight-text">🎯</div>
+                    <h3 class="text-xl font-semibold mb-2 section-title" data-i18n="missionTitle">الرسالة</h3>
+                    <ul class="text-gray-700 text-sm leading-relaxed text-right space-y-2">
+                        <li data-i18n="missionPoint1">• استيراد منتجات غذائية آمنة ومعتمدة وعالية الجودة.</li>
+                        <li data-i18n="missionPoint2">• بناء علاقات طويلة الأمد مع موردين عالميين موثوقين.</li>
+                        <li data-i18n="missionPoint3">• ضمان عمليات سلسلة توريد فعالة تضمن التسليم في الوقت المناسب ورضا العملاء.</li>
+                    </ul>
+                </div>
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="text-4xl mb-3 highlight-text">💖</div>
+                    <h3 class="text-xl font-semibold mb-2 section-title" data-i18n="valuesTitle">القيم الأساسية</h3>
+                    <ul class="text-gray-700 text-sm leading-relaxed text-right space-y-2">
+                        <li data-i18n="value1">• النزاهة - نعمل بصدق وشفافية.</li>
+                        <li data-i18n="value2">• الجودة - نولي الأولوية للمنتجات عالية الجودة التي تلبي المعايير الدولية.</li>
+                        <li data-i18n="value3">• الكفاءة - ننجز ما نعد به، في الوقت المحدد.</li>
+                        <li data-i18n="value4">• الاستدامة - نسعى إلى مصادر ولوجستيات مسؤولة بيئياً.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="products-import" class="scroll-mt-20">
+            <h2 class="text-2xl md:text-3xl font-semibold section-title text-center mb-8" data-i18n="productsImportTitle">المنتجات التي نستوردها</h2>
+            <div class="card p-6">
+                <p class="text-gray-700 mb-4 text-center" data-i18n="productsImportIntro">
+                    تتخصص FAMILY JOY LLC في استيراد مجموعة واسعة من المنتجات الغذائية والورقية والبلاستيكية عالية الجودة لتلبية احتياجات السوق الفلسطيني.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 product-category-title" data-i18n="importedFoodTitle">مواد غذائية أساسية</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 text-right">
+                            <li data-i18n="importedFood1">أرز (بسمتي 1121)</li>
+                            <li data-i18n="importedFood2">عدس، حمص، فاصوليا.</li>
+                            <li data-i18n="importedFood3">زيوت الطهي (عباد الشمس).</li>
+                            <li data-i18n="importedFood4">إندومي، مكرونة</li>
+                            <li data-i18n="importedFood5">معجون طماطم، كاتشب طماطم</li>
+                            <li data-i18n="importedFood6">خضروات وفواكه معلبة</li>
+                            <li data-i18n="importedFood7">عصائر</li>
+                            <li data-i18n="importedFood8">دقيق</li>
+                            <li data-i18n="importedFood9">كيك وكب كيك</li>
+                            <li data-i18n="importedFood10">أطعمة معلبة (حسب الطلب)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 product-category-title" data-i18n="importedPaperPlasticTitle">منتجات ورقية وبلاستيكية</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 text-right">
+                            <li data-i18n="importedPaperPlastic1">حفاضات الأطفال</li>
+                            <li data-i18n="importedPaperPlastic2">مناديل ورقية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products-distribute" class="scroll-mt-20">
+            <h2 class="text-2xl md:text-3xl font-semibold section-title text-center mb-8" data-i18n="productsDistributeTitle">المنتجات التي نوزعها</h2>
+            <div class="card p-6">
+                <p class="text-gray-700 mb-4 text-center" data-i18n="productsDistributeIntro">
+                    في Family Joy LLC، نقوم بتوزيع مجموعة واسعة من المنتجات الاستهلاكية الأساسية عالية الجودة عبر قطاعات مختلفة. تشمل فئات منتجاتنا:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 product-category-title" data-i18n="distributedFoodCategoryTitle">1- منتجات غذائية</h3>
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-800 mb-1" data-i18n="softDrinksJuicesTitle">المشروبات الغازية والعصائر:</h4>
+                            <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 text-right">
+                                <li data-i18n="softDrinksJuices1">كوكا كولا</li>
+                                <li data-i18n="softDrinksJuices2">آر سي</li>
+                                <li data-i18n="softDrinksJuices3">بيبسي</li>
+                                <li data-i18n="softDrinksJuices4">شويبس كولا</li>
+                                <li data-i18n="softDrinksJuices5">عصير المراعي</li>
+                                <li data-i18n="softDrinksJuices6">عصير كابي</li>
+                                <li data-i18n="softDrinksJuices7">عصير توب</li>
+                                <li data-i18n="softDrinksJuices8">إس إل</li>
+                                <li data-i18n="softDrinksJuices9">بلو</li>
+                                <li data-i18n="softDrinksJuices10">شاي</li>
+                                <li data-i18n="softDrinksJuices11">قهوة</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-800 mb-1" data-i18n="basicFoodSuppliesTitle">المستلزمات الغذائية الأساسية:</h4>
+                            <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 text-right">
+                                <li data-i18n="basicFoodSupplies1">جميع أنواع الأرز</li>
+                                <li data-i18n="basicFoodSupplies2">دقيق</li>
+                                <li data-i18n="basicFoodSupplies3">سكر</li>
+                                <li data-i18n="basicFoodSupplies4">ملح</li>
+                                <li data-i18n="basicFoodSupplies5">زيوت الطهي (عباد الشمس، النخيل، الذرة)</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-800 mb-1" data-i18n="cannedFoodsTitle">أطعمة معلبة:</h4>
+                            <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 text-right">
+                                <li data-i18n="cannedFoods1">تونة وسردين</li>
+                                <li data-i18n="cannedFoods2">معجون طماطم وكاتشب</li>
+                                <li data-i18n="cannedFoods3">سنيورة</li>
+                                <li data-i18n="cannedFoods4">مخللات</li>
+                                <li data-i18n="cannedFoods5">زيتون</li>
+                                <li data-i18n="cannedFoods6">ذرة</li>
+                                <li data-i18n="cannedFoods7">بازلاء</li>
+                                <li data-i18n="cannedFoods8">حمص</li>
+                                <li data-i18n="cannedFoods9">فول</li>
+                                <li data-i18n="cannedFoods10">أناناس</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-800 mb-1" data-i18n="packagedFrozenFoodsTitle">أطعمة معبأة ومجمدة:</h4>
+                            <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 text-right">
+                                <li data-i18n="packagedFrozenFoods1">إندومي</li>
+                                <li data-i18n="packagedFrozenFoods2">مكرونة</li>
+                                <li data-i18n="packagedFrozenFoods3">سباغيتي</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="font-medium text-gray-800 mb-1" data-i18n="chocolatesTitle">شوكولاتة:</h4>
+                            <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 text-right">
+                                <li data-i18n="chocolates1">سنيكرز</li>
+                                <li data-i18n="chocolates2">مارس</li>
+                                <li data-i18n="chocolates3">باونتي</li>
+                                <li data-i18n="chocolates4">تويكس</li>
+                                <li data-i18n="chocolates5">بريك تيفاني</li>
+                                <li data-i18n="chocolates6">إي تي آي</li>
+                                <li data-i18n="chocolates7">أولكر</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-1" data-i18n="snacksTitle">وجبات خفيفة:</h4>
+                            <ul class="list-disc list-inside text-gray-700 text-sm space-y-1 text-right">
+                                <li data-i18n="snacks1">ليز</li>
+                                <li data-i18n="snacks2">دوريتوس</li>
+                                <li data-i18n="snacks3">شيتوس</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 product-category-title" data-i18n="distributedPaperPlasticCategoryTitle">2- منتجات ورقية وبلاستيكية</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 text-right">
+                            <li data-i18n="distributedPaperPlastic1">حفاضات لجميع الأعمار (بأحجام وعلامات تجارية مختلفة)</li>
+                            <li data-i18n="distributedPaperPlastic2">مناديل ورقية ولفائف تواليت</li>
+                            <li data-i18n="distributedPaperPlastic3">مناشف ورقية ومناديل</li>
+                            <li data-i18n="distributedPaperPlastic4">أدوات بلاستيكية تستخدم لمرة واحدة (أكواب، أطباق، أدوات مائدة)</li>
+                            <li data-i18n="distributedPaperPlastic5">منتجات صحية ونظافة</li>
+                        </ul>
+                        <p class="mt-4 text-gray-700 text-sm text-center" data-i18n="distributedPaperPlasticText">
+                            نحن نضمن أن جميع منتجاتنا تلبي معايير الجودة العالمية، ونعمل مع موردين ومصنعين موثوقين من جميع أنحاء العالم.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-services" class="scroll-mt-20">
+            <h2 class="text-2xl md:text-3xl font-semibold section-title text-center mb-8" data-i18n="ourServicesTitle">خدماتنا</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="text-3xl mb-3 highlight-text">📦</div>
+                    <h3 class="text-lg font-semibold mb-2" data-i18n="service1Title">استيراد بالجملة وتوزيع بالجملة</h3>
+                </div>
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="text-3xl mb-3 highlight-text">🏷️</div>
+                    <h3 class="text-lg font-semibold mb-2" data-i18n="service2Title">تأمين العلامات التجارية الخاصة</h3>
+                </div>
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="text-3xl mb-3 highlight-text">🎁</div>
+                    <h3 class="text-lg font-semibold mb-2" data-i18n="service3Title">حلول تغليف مخصصة</h3>
+                </div>
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="text-3xl mb-3 highlight-text">📜</div>
+                    <h3 class="text-lg font-semibold mb-2" data-i18n="service4Title">الامتثال التنظيمي وشهادة المنتج</h3>
+                </div>
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="text-3xl mb-3 highlight-text">🚚</div>
+                    <h3 class="text-lg font-semibold mb-2" data-i18n="service5Title">دعم اللوجستيات والتخزين</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="target-markets" class="scroll-mt-20">
+            <h2 class="text-2xl md:text-3xl font-semibold section-title text-center mb-8" data-i18n="targetMarketsTitle">الأسواق المستهدفة</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <div class="card p-6 flex items-center">
+                    <div class="text-3xl mr-4 highlight-text">🛒</div>
+                    <p class="text-lg font-medium text-gray-700" data-i18n="market1">السوبرماركت والهايبرماركت</p>
+                </div>
+                <div class="card p-6 flex items-center">
+                    <div class="text-3xl mr-4 highlight-text">🍽️</div>
+                    <p class="text-lg font-medium text-gray-700" data-i18n="market2">المطاعم وشركات التموين</p>
+                </div>
+                <div class="card p-6 flex items-center">
+                    <div class="text-3xl mr-4 highlight-text">📦</div>
+                    <p class="text-lg font-medium text-gray-700" data-i18n="market3">الموزعون وتجار الجملة</p>
+                </div>
+                <div class="card p-6 flex items-center">
+                    <div class="text-3xl mr-4 highlight-text">🏛️</div>
+                    <p class="text-lg font-medium text-gray-700" data-i18n="market4">برامج المشتريات الحكومية للأغذية</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-strengths" class="scroll-mt-20">
+            <h2 class="text-2xl md:text-3xl font-semibold section-title text-center mb-8" data-i18n="ourStrengthsTitle">نقاط قوتنا</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card p-6 flex items-start">
+                    <div class="text-3xl mr-4 highlight-text">🌐</div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2" data-i18n="strength1Title">شبكة توزيع قوية</h3>
+                        <p class="text-gray-700 text-sm" data-i18n="strength1Text">عبر فلسطين، خاصة في الخليل ورام الله.</p>
+                    </div>
+                </div>
+                <div class="card p-6 flex items-start">
+                    <div class="text-3xl mr-4 highlight-text">🏬</div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2" data-i18n="strength2Title">مستودعات تخزين مجهزة جيداً</h3>
+                        <p class="text-gray-700 text-sm" data-i18n="strength2Text">لضمان سلامة المنتج وتوافره.</p>
+                    </div>
+                </div>
+                <div class="card p-6 flex items-start md:col-span-2">
+                    <div class="text-3xl mr-4 highlight-text">🚛</div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2" data-i18n="strength3Title">أسطول من مركبات التوصيل</h3>
+                        <p class="text-gray-700 text-sm" data-i18n="strength3Text">جاهز لتلبية متطلبات السوق بسرعة وكفاءة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="key-suppliers" class="scroll-mt-20">
+            <h2 class="text-2xl md:text-3xl font-semibold section-title text-center mb-8" data-i18n="keySuppliersTitle">موردونا الرئيسيون</h2>
+            <div class="card p-6">
+                <p class="text-gray-700 mb-6 text-center" data-i18n="keySuppliersIntro">
+                    نتعاون مع شبكة موثوقة من الموردين الدوليين والإقليميين المعروفين بالتزامهم بالجودة والموثوقية. تضمن هذه الشراكات طويلة الأمد اتساق المنتج، والأسعار التنافسية، واللوجستيات السلسة عبر سلسلة التوريد لدينا.
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 items-center justify-center text-center">
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">ZAMZAM</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">Karam</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">SJ</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">SAMA JORDAN</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">jok</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">مجموعة الهزاع الاستثمارية</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">مجموعة سما الأردن</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">FOCID & INDUSTRIAL INVESTMENTS</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">unicharm</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">Baby Joy</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">alyoum Bakery</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">HALLOUMI FOODS</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">comma</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">Pack Nature</div>
+                    <div class="p-3 bg-gray-50 rounded-md shadow-sm text-gray-800 font-medium">Arabian Development for Food Industries Co.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us" class="scroll-mt-20">
+            <h2 class="text-2xl md:text-3xl font-semibold section-title text-center mb-8" data-i18n="contactUsTitle">اتصل بنا</h2>
+            <div class="card p-6 max-w-2xl mx-auto text-center">
+                <p class="text-lg text-gray-700 mb-4" data-i18n="contactUsIntro">يسعدنا تواصلكم معنا لأي استفسارات أو شراكات.</p>
+                <ul class="space-y-3 text-gray-700 text-right">
+                    <li class="flex items-center justify-center">
+                        <span class="text-xl mr-3 highlight-text">📍</span>
+                        <div data-i18n="contactAddress">
+                            <strong>المكتب الرئيسي:</strong> الخليل - فلسطين<br>
+                            <strong>مكتب الفرع:</strong> رام الله، فلسطين
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <span class="text-xl mr-3 highlight-text">📞</span>
+                        <strong data-i18n="contactPhoneTitle">الهاتف:</strong> +972 59 294 5949
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <span class="text-xl mr-3 highlight-text">📧</span>
+                        <strong data-i18n="contactEmailTitle">البريد الإلكتروني:</strong> familyjoyllc@gmail.com
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-12 py-8 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mt-6 text-xs text-gray-500" data-i18n="footerText">
+                موقع FAMILY JOY LLC. جميع الحقوق محفوظة &copy; 2025.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            ar: {
+                pageTitle: 'FAMILY JOY LLC - نظرة عامة على الشركة',
+                headerTitle: 'FAMILY JOY LLC',
+                headerSubtitle: 'شركة رائدة في استيراد وتوزيع المواد الغذائية والمنتجات الورقية والبلاستيكية',
+                langButton: 'English',
+                companyOverviewTitle: 'نظرة عامة على الشركة',
+                companyOverviewText: 'تعتبر FAMILY JOY LLC شركة رائدة في استيراد المواد الغذائية، ملتزمة بتوريد وتوزيع وتوريد منتجات غذائية عالية الجودة من الأسواق العالمية لتلبية الطلبات المتزايدة في منطقة فلسطين. تأسست الشركة عام 1985 ومقرها الرئيسي في الخليل، فلسطين، ونحن متخصصون في استيراد وتوزيع الحبوب والبقوليات والأطعمة المعلبة وغيرها من المواد الغذائية الأساسية، بالإضافة إلى استيراد وتوزيع المنتجات الورقية والبلاستيكية مثل حفاضات الأطفال والمناديل الورقية.',
+                vmvTitle: 'رؤيتنا، رسالتنا، وقيمنا الأساسية',
+                visionTitle: 'الرؤية',
+                visionText: 'أن نصبح شركة تجارية موثوقة ومبتكرة في مجال الأغذية تضمن الأمن الغذائي والاستدامة والوصول إلى المنتجات عالية الجودة لكل منزل وعمل نخدمه.',
+                missionTitle: 'الرسالة',
+                missionPoint1: '• استيراد منتجات غذائية آمنة ومعتمدة وعالية الجودة.',
+                missionPoint2: '• بناء علاقات طويلة الأمد مع موردين عالميين موثوقين.',
+                missionPoint3: '• ضمان عمليات سلسلة توريد فعالة تضمن التسليم في الوقت المناسب ورضا العملاء.',
+                valuesTitle: 'القيم الأساسية',
+                value1: '• النزاهة - نعمل بصدق وشفافية.',
+                value2: '• الجودة - نولي الأولوية للمنتجات عالية الجودة التي تلبي المعايير الدولية.',
+                value3: '• الكفاءة - ننجز ما نعد به، في الوقت المحدد.',
+                value4: '• الاستدامة - نسعى إلى مصادر ولوجستيات مسؤولة بيئياً.',
+                productsImportTitle: 'المنتجات التي نستوردها',
+                productsImportIntro: 'تتخصص FAMILY JOY LLC في استيراد مجموعة واسعة من المنتجات الغذائية والورقية والبلاستيكية عالية الجودة لتلبية احتياجات السوق الفلسطيني.',
+                importedFoodTitle: 'مواد غذائية أساسية',
+                importedFood1: 'أرز (بسمتي 1121)',
+                importedFood2: 'عدس، حمص، فاصوليا.',
+                importedFood3: 'زيوت الطهي (عباد الشمس).',
+                importedFood4: 'إندومي، مكرونة',
+                importedFood5: 'معجون طماطم، كاتشب طماطم',
+                importedFood6: 'خضروات وفواكه معلبة',
+                importedFood7: 'عصائر',
+                importedFood8: 'دقيق',
+                importedFood9: 'كيك وكب كيك',
+                importedFood10: 'أطعمة معلبة (حسب الطلب)',
+                importedPaperPlasticTitle: 'منتجات ورقية وبلاستيكية',
+                importedPaperPlastic1: 'حفاضات الأطفال',
+                importedPaperPlastic2: 'مناديل ورقية',
+                productsDistributeTitle: 'المنتجات التي نوزعها',
+                productsDistributeIntro: 'في Family Joy LLC، نقوم بتوزيع مجموعة واسعة من المنتجات الاستهلاكية الأساسية عالية الجودة عبر قطاعات مختلفة. تشمل فئات منتجاتنا:',
+                distributedFoodCategoryTitle: '1- منتجات غذائية',
+                softDrinksJuicesTitle: 'المشروبات الغازية والعصائر:',
+                softDrinksJuices1: 'كوكا كولا',
+                softDrinksJuices2: 'آر سي',
+                softDrinksJuices3: 'بيبسي',
+                softDrinksJuices4: 'شويبس كولا',
+                softDrinksJuices5: 'عصير المراعي',
+                softDrinksJuices6: 'عصير كابي',
+                softDrinksJuices7: 'عصير توب',
+                softDrinksJuices8: 'إس إل',
+                softDrinksJuices9: 'بلو',
+                softDrinksJuices10: 'شاي',
+                softDrinksJuices11: 'قهوة',
+                basicFoodSuppliesTitle: 'المستلزمات الغذائية الأساسية:',
+                basicFoodSupplies1: 'جميع أنواع الأرز',
+                basicFoodSupplies2: 'دقيق',
+                basicFoodSupplies3: 'سكر',
+                basicFoodSupplies4: 'ملح',
+                basicFoodSupplies5: 'زيوت الطهي (عباد الشمس، النخيل، الذرة)',
+                cannedFoodsTitle: 'أطعمة معلبة:',
+                cannedFoods1: 'تونة وسردين',
+                cannedFoods2: 'معجون طماطم وكاتشب',
+                cannedFoods3: 'سنيورة',
+                cannedFoods4: 'مخللات',
+                cannedFoods5: 'زيتون',
+                cannedFoods6: 'ذرة',
+                cannedFoods7: 'بازلاء',
+                cannedFoods8: 'حمص',
+                cannedFoods9: 'فول',
+                cannedFoods10: 'أناناس',
+                packagedFrozenFoodsTitle: 'أطعمة معبأة ومجمدة:',
+                packagedFrozenFoods1: 'إندومي',
+                packagedFrozenFoods2: 'مكرونة',
+                packagedFrozenFoods3: 'سباغيتي',
+                chocolatesTitle: 'شوكولاتة:',
+                chocolates1: 'سنيكرز',
+                chocolates2: 'مارس',
+                chocolates3: 'باونتي',
+                chocolates4: 'تويكس',
+                chocolates5: 'بريك تيفاني',
+                chocolates6: 'إي تي آي',
+                chocolates7: 'أولكر',
+                snacksTitle: 'وجبات خفيفة:',
+                snacks1: 'ليز',
+                snacks2: 'دوريتوس',
+                snacks3: 'شيتوس',
+                distributedPaperPlasticCategoryTitle: '2- منتجات ورقية وبلاستيكية',
+                distributedPaperPlastic1: 'حفاضات لجميع الأعمار (بأحجام وعلامات تجارية مختلفة)',
+                distributedPaperPlastic2: 'مناديل ورقية ولفائف تواليت',
+                distributedPaperPlastic3: 'مناشف ورقية ومناديل',
+                distributedPaperPlastic4: 'أدوات بلاستيكية تستخدم لمرة واحدة (أكواب، أطباق، أدوات مائدة)',
+                distributedPaperPlastic5: 'منتجات صحية ونظافة',
+                distributedPaperPlasticText: 'نحن نضمن أن جميع منتجاتنا تلبي معايير الجودة العالمية، ونعمل مع موردين ومصنعين موثوقين من جميع أنحاء العالم.',
+                ourServicesTitle: 'خدماتنا',
+                service1Title: 'استيراد بالجملة وتوزيع بالجملة',
+                service2Title: 'تأمين العلامات التجارية الخاصة',
+                service3Title: 'حلول تغليف مخصصة',
+                service4Title: 'الامتثال التنظيمي وشهادة المنتج',
+                service5Title: 'دعم اللوجستيات والتخزين',
+                targetMarketsTitle: 'الأسواق المستهدفة',
+                market1: 'السوبرماركت والهايبرماركت',
+                market2: 'المطاعم وشركات التموين',
+                market3: 'الموزعون وتجار الجملة',
+                market4: 'برامج المشتريات الحكومية للأغذية',
+                ourStrengthsTitle: 'نقاط قوتنا',
+                strength1Title: 'شبكة توزيع قوية',
+                strength1Text: 'عبر فلسطين، خاصة في الخليل ورام الله.',
+                strength2Title: 'مستودعات تخزين مجهزة جيداً',
+                strength2Text: 'لضمان سلامة المنتج وتوافره.',
+                strength3Title: 'أسطول من مركبات التوصيل',
+                strength3Text: 'جاهز لتلبية متطلبات السوق بسرعة وكفاءة.',
+                keySuppliersTitle: 'موردونا الرئيسيون',
+                keySuppliersIntro: 'نتعاون مع شبكة موثوقة من الموردين الدوليين والإقليميين المعروفين بالتزامهم بالجودة والموثوقية. تضمن هذه الشراكات طويلة الأمد اتساق المنتج، والأسعار التنافسية، واللوجستيات السلسة عبر سلسلة التوريد لدينا.',
+                contactUsTitle: 'اتصل بنا',
+                contactUsIntro: 'يسعدنا تواصلكم معنا لأي استفسارات أو شراكات.',
+                contactAddress: '<strong>المكتب الرئيسي:</strong> الخليل - فلسطين<br><strong>مكتب الفرع:</strong> رام الله، فلسطين',
+                contactPhoneTitle: 'الهاتف:',
+                contactEmailTitle: 'البريد الإلكتروني:',
+                footerText: 'موقع FAMILY JOY LLC. جميع الحقوق محفوظة &copy; 2025.',
+                // Supplier names (text only, as images are not used)
+                supplierZamzam: 'ZAMZAM',
+                supplierKaram: 'Karam',
+                supplierSJ: 'SJ',
+                supplierSamaJordan: 'SAMA JORDAN',
+                supplierJok: 'jok',
+                supplierAlHazaa: 'مجموعة الهزاع الاستثمارية',
+                supplierSamaJordanGroup: 'مجموعة سما الأردن',
+                supplierFocid: 'FOCID & INDUSTRIAL INVESTMENTS',
+                supplierUnicharm: 'unicharm',
+                supplierBabyJoy: 'Baby Joy',
+                supplierAlyoumBakery: 'alyoum Bakery',
+                supplierHalloumi: 'HALLOUMI FOODS',
+                supplierComma: 'comma',
+                supplierPackNature: 'Pack Nature',
+                supplierArabianDevelopment: 'Arabian Development for Food Industries Co.'
+            },
+            en: {
+                pageTitle: 'FAMILY JOY LLC - Company Overview',
+                headerTitle: 'FAMILY JOY LLC',
+                headerSubtitle: 'A leading company in importing and distributing food, paper, and plastic products',
+                langButton: 'العربية',
+                companyOverviewTitle: 'Company Overview',
+                companyOverviewText: 'Family Joy LLC is a leading food import company committed to sourcing, distributing, and supplying high-quality food products from global markets to serve the growing demands of the Palestine region. Established in 1985 and headquartered in Hebron, Palestine, we specialize in the importation and distribution of grains, pulses, canned food, and other essential food items, in addition to the import and distribution of paper and plastic products such as baby diapers and tissue paper.',
+                vmvTitle: 'Our Vision, Mission, and Core Values',
+                visionTitle: 'Vision',
+                visionText: 'To become a trusted and innovative food trading company that ensures food security, sustainability, and access to quality products for every household and business we serve.',
+                missionTitle: 'Mission',
+                missionPoint1: '• To import safe, certified, and high-quality food products.',
+                missionPoint2: '• To build long-term relationships with reliable global suppliers.',
+                missionPoint3: '• To ensure efficient supply chain operations that guarantee timely delivery and customer satisfaction.',
+                valuesTitle: 'Core Values',
+                value1: '• Integrity - We operate with honesty and transparency.',
+                value2: '• Quality - We prioritize top-tier products that meet international standards.',
+                value3: '• Efficiency - We deliver what we promise, on time.',
+                value4: '• Sustainability - We seek environmentally responsible sourcing and logistics.',
+                productsImportTitle: 'Products We Import',
+                productsImportIntro: 'FAMILY JOY LLC specializes in importing a wide range of high-quality food, paper, and plastic products to meet the needs of the Palestinian market.',
+                importedFoodTitle: 'Basic Food Items',
+                importedFood1: 'Rice (Basmati 1121)',
+                importedFood2: 'Lentils, Chickpeas, Beans.',
+                importedFood3: 'Cooking Oils (Sunflower).',
+                importedFood4: 'Indomie, Pasta',
+                importedFood5: 'Tomato paste, Tomato ketchup',
+                importedFood6: 'Canned Vegetables & Fruits',
+                importedFood7: 'Juices',
+                importedFood8: 'Flour',
+                importedFood9: 'Cake and Cupcake',
+                importedFood10: 'Packaged Foods (on demand)',
+                importedPaperPlasticTitle: 'Paper & Plastic Products',
+                importedPaperPlastic1: 'Baby Diapers',
+                importedPaperPlastic2: 'Tissue Paper',
+                productsDistributeTitle: 'Products We Distribute',
+                productsDistributeIntro: 'At Family Joy LLC, we distribute a wide range of high-quality, essential consumer products across various sectors. Our product categories include:',
+                distributedFoodCategoryTitle: '1- Food Products',
+                softDrinksJuicesTitle: 'Soft Drinks and Juices:',
+                softDrinksJuices1: 'Coca-Cola',
+                softDrinksJuices2: 'RC',
+                softDrinksJuices3: 'Pepsi',
+                softDrinksJuices4: 'Schweppes Cola',
+                softDrinksJuices5: 'Almarai Juice',
+                softDrinksJuices6: 'Cappy Juice',
+                softDrinksJuices7: 'Top Juice',
+                softDrinksJuices8: 'SL',
+                softDrinksJuices9: 'Blue',
+                softDrinksJuices10: 'Tea',
+                softDrinksJuices11: 'Coffee',
+                basicFoodSuppliesTitle: 'Basic Food Supplies:',
+                basicFoodSupplies1: 'All types of rice',
+                basicFoodSupplies2: 'Flour',
+                basicFoodSupplies3: 'Sugar',
+                basicFoodSupplies4: 'Salt',
+                basicFoodSupplies5: 'Cooking Oils (Sunflower, Palm, Corn)',
+                cannedFoodsTitle: 'Canned Foods:',
+                cannedFoods1: 'Tuna and Sardines',
+                cannedFoods2: 'Tomato Paste and Ketchup',
+                cannedFoods3: 'Seniora',
+                cannedFoods4: 'Pickles',
+                cannedFoods5: 'Olives',
+                cannedFoods6: 'Corn',
+                cannedFoods7: 'Peas',
+                cannedFoods8: 'Chickpeas',
+                cannedFoods9: 'Fava Beans',
+                cannedFoods10: 'Pineapple',
+                packagedFrozenFoodsTitle: 'Packaged and Frozen Foods:',
+                packagedFrozenFoods1: 'Indomie',
+                packagedFrozenFoods2: 'Pasta',
+                packagedFrozenFoods3: 'Spaghetti',
+                chocolatesTitle: 'Chocolates:',
+                chocolates1: 'Snickers',
+                chocolates2: 'Mars',
+                chocolates3: 'Bounty',
+                chocolates4: 'Twix',
+                chocolates5: 'Break Tiffany',
+                chocolates6: 'ETI',
+                chocolates7: 'Ulker',
+                snacksTitle: 'Snacks:',
+                snacks1: 'Lay\'s',
+                snacks2: 'Doritos',
+                snacks3: 'Cheetos',
+                distributedPaperPlasticCategoryTitle: '2- Paper & Plastic Products',
+                distributedPaperPlastic1: 'Diapers for all ages (various sizes and brands)',
+                distributedPaperPlastic2: 'Tissue Paper and Toilet Rolls',
+                distributedPaperPlastic3: 'Paper Towels and Napkins',
+                distributedPaperPlastic4: 'Disposable Plastic Items (cups, plates, cutlery)',
+                distributedPaperPlastic5: 'Sanitary and Hygiene Products',
+                distributedPaperPlasticText: 'We ensure all our products meet international quality standards, and we work with reliable suppliers and manufacturers from around the globe.',
+                ourServicesTitle: 'Our Services',
+                service1Title: 'Bulk Import & Wholesale Distribution',
+                service2Title: 'Private Label Sourcing',
+                service3Title: 'Customized Packaging Solutions',
+                service4Title: 'Regulatory Compliance and Product Certification',
+                service5Title: 'Logistics and Warehousing Support',
+                targetMarketsTitle: 'Target Markets',
+                market1: 'Supermarkets & Hypermarkets',
+                market2: 'Restaurants and Catering Companies',
+                market3: 'Distributors and Wholesalers',
+                market4: 'Governmental Food Procurement Programs',
+                ourStrengthsTitle: 'Our Strengths',
+                strength1Title: 'Strong distribution network',
+                strength1Text: 'across Palestine, especially in Hebron and Ramallah.',
+                strength2Title: 'Well-equipped storage warehouses',
+                strength2Text: 'to ensure product safety and availability.',
+                strength3Title: 'A fleet of delivery vehicles',
+                strength3Text: 'ready to meet market demands quickly and efficiently.',
+                keySuppliersTitle: 'Our Key Suppliers',
+                keySuppliersIntro: 'We collaborate with a trusted network of international and regional suppliers known for their commitment to quality and reliability. These long-term partnerships ensure product consistency, competitive pricing, and smooth logistics throughout our supply chain.',
+                contactUsTitle: 'Contact Us',
+                contactUsIntro: 'Feel free to contact us for any inquiries or partnerships.',
+                contactAddress: '<strong>Head Office:</strong> Hebron - Palestine<br><strong>Branch Office:</strong> Ramallah, Palestine',
+                contactPhoneTitle: 'Phone:',
+                contactEmailTitle: 'Email:',
+                footerText: 'FAMILY JOY LLC Website. All rights reserved &copy; 2025.',
+                // Supplier names (text only, as images are not used)
+                supplierZamzam: 'ZAMZAM',
+                supplierKaram: 'Karam',
+                supplierSJ: 'SJ',
+                supplierSamaJordan: 'SAMA JORDAN',
+                supplierJok: 'jok',
+                supplierAlHazaa: 'Al-Hazaa Investment Group',
+                supplierSamaJordanGroup: 'Sama Jordan Group',
+                supplierFocid: 'FOCID & INDUSTRIAL INVESTMENTS',
+                supplierUnicharm: 'unicharm',
+                supplierBabyJoy: 'Baby Joy',
+                supplierAlyoumBakery: 'alyoum Bakery',
+                supplierHalloumi: 'HALLOUMI FOODS',
+                supplierComma: 'comma',
+                supplierPackNature: 'Pack Nature',
+                supplierArabianDevelopment: 'Arabian Development for Food Industries Co.'
+            }
+        };
+
+        const languageSwitcher = document.getElementById('language-switcher');
+        const htmlElement = document.documentElement;
+
+        // Function to set the language and update content
+        function setLanguage(lang) {
+            htmlElement.lang = lang;
+            htmlElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+            localStorage.setItem('lang', lang);
+
+            // Update button text
+            languageSwitcher.textContent = translations[lang].langButton;
+
+            // Update all elements with data-i18n attributes
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Specific updates for supplier names that are not data-i18n attributes
+            const supplierDivs = document.querySelectorAll('#key-suppliers .card .grid > div');
+            const supplierKeys = [
+                'supplierZamzam', 'supplierKaram', 'supplierSJ', 'supplierSamaJordan', 'supplierJok',
+                'supplierAlHazaa', 'supplierSamaJordanGroup', 'supplierFocid', 'supplierUnicharm',
+                'supplierBabyJoy', 'supplierAlyoumBakery', 'supplierHalloumi', 'supplierComma',
+                'supplierPackNature', 'supplierArabianDevelopment'
+            ];
+            supplierDivs.forEach((div, index) => {
+                if (supplierKeys[index] && translations[lang][supplierKeys[index]]) {
+                    div.textContent = translations[lang][supplierKeys[index]];
+                }
+            });
+        }
+
+        // Initialize language based on localStorage or default to Arabic
+        const storedLang = localStorage.getItem('lang') || 'ar';
+        setLanguage(storedLang);
+
+        // Add event listener to the language switcher button
+        languageSwitcher.addEventListener('click', () => {
+            const currentLang = htmlElement.lang;
+            const newLang = (currentLang === 'ar') ? 'en' : 'ar';
+            setLanguage(newLang);
+        });
+    </script>
+</body>
+</html>
